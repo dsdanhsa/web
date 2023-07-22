@@ -3,8 +3,20 @@ from django.http import JsonResponse
 import json
 import datetime
 from .models import * 
-from .utils import cookieCart, cartData, guestOrder
+from .utils import *
+#apple
+def apple(request):
+	data = cartDataApple(request)
 
+	cartItems = data['cartItems']
+	order = data['order']
+	items = data['items']
+
+	products = ProductApple.objects.all()
+	context = {'products':products, 'cartItems':cartItems}
+	return render(request, 'store/apple.html', context)
+
+#store
 def store(request):
 	data = cartData(request)
 
