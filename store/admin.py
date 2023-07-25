@@ -11,7 +11,10 @@ admin.site.register(OrderItem)
 admin.site.register(ProductApple)
 admin.site.register(OrderApple)
 admin.site.register(OrderItemApple)
+#macbook
+admin.site.register(ProductMacbook)
+admin.site.register(OrderMacbook)
+admin.site.register(OrderItemMacbook)
 
-
-
+#ship
 admin.site.register(ShippingAddress)

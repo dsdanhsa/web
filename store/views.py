@@ -15,6 +15,39 @@ def apple(request):
 	products = ProductApple.objects.all()
 	context = {'products':products, 'cartItems':cartItems}
 	return render(request, 'store/apple.html', context)
+def cartapple(request):
+	data = cartDataApple(request)
+
+	cartItems = data['cartItems']
+	order = data['order']
+	items = data['items']
+
+	context = {'items':items, 'order':order, 'cartItems':cartItems}
+	return render(request, 'store/apple.html', context)
+
+
+#macbook
+def macbook(request):
+	data = cartDataMacbook(request)
+
+	cartItems = data['cartItems']
+	order = data['order']
+	items = data['items']
+
+	products = ProductMacbook.objects.all()
+	context = {'products':products, 'cartItems':cartItems}
+	return render(request, 'store/macbook.html', context)
+def cartmacbook(request):
+	data = cartDataMacbook(request)
+
+	cartItems = data['cartItems']
+	order = data['order']
+	items = data['items']
+
+	context = {'items':items, 'order':order, 'cartItems':cartItems}
+	return render(request, 'store/macbook.html', context)
+
+
 
 #store
 def store(request):
