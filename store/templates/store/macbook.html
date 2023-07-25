@@ -1,6 +1,29 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
+
+	<div class="intro">
+		<div class="intro-1" style="margin-top: 10px; background-color: #fff; padding-top: 40px; padding-bottom: 40px;">
+			<p style="color: orange; text-align: center; font-size: 2em; font-style: italic;margin-bottom: 0px;"> new</p>
+			<h1 style="font-family:'Times New Roman', Times, serif; text-align: center; color: black;
+			font-weight: 650;margin-bottom: 0px;">MacBook Air 15”</h1>
+			<h3 style="font-family:'Times New Roman', Times, serif; text-align: center; color: #111;     font-weight: 600;">Impressively big. Impossibly thin.</h3>
+			<p style="font-family: Arial, Helvetica, sans-serif; text-align: center;">From $108.25/mo. for 12 mo. or $1299**</p>
+			<img src="https://www.apple.com/v/mac/home/bu/images/overview/hero/macbook_air__f6z1e32o3866_large.jpg" alt=""
+			style="margin-left: 200px;">
+		</div>
+
+		<div class="intro-1" style="margin-top: 10px; background-color: #fff; padding-top: 40px; padding-bottom: 40px;">
+			<p style="color: orange; text-align: center; font-size: 2em; font-style: italic;margin-bottom: 0px;"> new</p>
+			<h1 style="font-family:'Times New Roman', Times, serif; text-align: center; color: black;
+			font-weight: 650;margin-bottom: 0px;">Mac Studio</h1>
+			<h3 style="font-family:'Times New Roman', Times, serif; text-align: center; color: #111;     font-weight: 600;">Supercharged by M2 Max and M2 Ultra.</h3>
+			<p style="font-family: Arial, Helvetica, sans-serif; text-align: center;">From $166.58/mo. for 12 mo. or $1999**</p>
+			<img src="https://www.apple.com/v/mac/home/bu/images/overview/hero/mac_studio__c2wojtx43pw2_large.jpg" alt=""
+			style="margin-left: 400px;">
+		</div>
+	</div>
+
 	<div class="row" >
 		{% for product in products %}
 		<div class="col-lg-4">
@@ -15,7 +38,7 @@
 				<h4 style="display: inline-block; "><strong>${{product.price}}</strong></h4>
 
 			</div>
-		</div>
+		</div
 		{% endfor %}
 	</div>
 

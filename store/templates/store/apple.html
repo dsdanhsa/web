@@ -1,6 +1,26 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
+	<div class="intro">
+		<div class="intro-1" style="margin-top: 10px; background-color: #fff; padding-top: 40px; padding-bottom: 40px;">
+			<h3 style="font-family: Arial, Helvetica, sans-serif; text-align: center;">Iphone14</h3>
+			<h1 style="font-family:'Times New Roman', Times, serif; text-align: center; color: black;
+			font-weight: 650; font-weight: bold;">Wonderfull.</h1>
+			<p style="font-family: Arial, Helvetica, sans-serif; text-align: center;">From $799 or $33.29/mo. for 24 mo. before trade‑in</p>
+			<img src="https://www.apple.com/v/iphone/home/bo/images/overview/hero/hero_iphone_14__de41900yuggi_large.jpg" alt=""
+			style="margin-left: 200px;">
+		</div>
+
+		<div class="intro-1" style="margin-top: 10px; background-color: rgb(1, 1, 1);padding-top: 40px;  padding-bottom: 40px;">
+			<h3 style="font-family: Arial, Helvetica, sans-serif; text-align: center; color: #fff;">Iphone14Pro</h3>
+			<h1 style="font-family:'Times New Roman', Times, serif; text-align: center; color: #fff;
+			font-weight: 650; font-weight: bold;">Pro. Beyond.</h1>
+			<p style="font-family: Arial, Helvetica, sans-serif; text-align: center; color: #fff;">From $999 or $41.62/mo. for 24 mo. before trade‑in</p>
+			<img src="https://www.apple.com/v/iphone/home/bo/images/overview/hero/hero_iphone_14_pro__e8bufymdlseq_large.jpg" alt=""
+			style="margin-left: 200px;">
+		</div>
+	</div>
+	
 	<div class="row" >
 		{% for product in products %}
 		<div class="col-lg-4">
