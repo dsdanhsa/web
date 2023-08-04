@@ -11,7 +11,10 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
 	<script type="text/javascript">
 		var user = '{{request.user}}'
 
@@ -68,7 +71,7 @@
 	<div class="contaier-nav">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{% url 'store' %}">
               <img src="https://media.loveitopcdn.com/3807/logo-apple-1.png" width="40px" height="40px" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -124,32 +127,54 @@
             {% endblock content %}
         </div>
 
-		<div class="footer text-align" style="padding: 21px 0; margin-top: 20px; background-color: gray;">
-            <div class="content text-center">
-                Bạn cần hổ trợ thêm? 
-                <a href="#"> Chat ngay</a>  Không muốn chat thì tự tới store mà mua
-            </div>
-            <div class="content1 text-align text-dark" style="margin: 21px; ">
-                <p>Giá hiển thị đã bao gồm tất cả các khoản thuế. Giao hàng miễn phí cho tất cả đơn hàng.</p>
-                <p>Apple Online Store sử dụng công nghệ mã hóa tiêu chuẩn trong ngành để bảo vệ bí mật cho thông tin do bạn gửi.</p>
-            </div>
-            <div class="row text-center">
-                <div class="col-4" style="font-size: 20px">
-                    <b>THEO DÕI TÔI TRÊN </b>
-                <li style="font-size: 20px"><i class="fa-brands fa-facebook"></i> Facebook</li>
-                <li style="font-size: 20px"><i class="fa-brands fa-instagram"></i> Instargram</li>
-                <p> Còn không thích theo dõi thì khỏi mua</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/yeni22.3_qr.png" width="200px" height="220px" alt="">
-                </div>
-                <div class="col-4">
-                    <img src="images/meo.jpg" width="200px" height="250px" alt="">
-                </div>
-            </div>
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+<!-- footer -->
+<div class="footer" style="background-image: linear-gradient(to right, rgb(212 249 247), rgb(223 217 36 ),rgba(244, 86, 207));">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4 col-xs-12">
+              <div class="first">
+                  <h4>My Skills</h4>
+                  <p> Analytical Skills</p>
+                  <p> Problem-solving skills</p>
+                  <p> Critical-thinking skills</p>
+              </div>
+          </div>
 
-        </div>
+          <div class="col-md-4 col-xs-12">
+              <div class="second">
+                  <h4> Navigate</h4>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Projects</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
 
+          <div class="col-md-4 col-xs-12">
+              <div class="third">
+                  <h4> Contact</h4>
+                  <ul>
+                      <li>SA Store </li>
+                      <ul></ul>
+
+                      <li>dsdanhsa@gmail.com</li>
+                      <li>letandanhqn@outlook.com.vn</li>
+
+
+                    <li><i class="fas fa-map-marker-alt"></i> Đà Nẵng, Việt Nam </li>
+                  </l<>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container">
+      <div class="row">
+      </div>
+      </div>
+</div>
 
 
 	<!--script-->
